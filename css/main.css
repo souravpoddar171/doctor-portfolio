@@ -1,0 +1,2209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 0; */
+    font-family: none;
+    font-size: unset;
+    font-weight: 400;
+    line-height: unset;
+    color: #212529;
+    /* background-color: #fff; */
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.top-navbar{
+    display: block;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+   z-index: 1000;
+}
+
+
+/* globle  */
+
+h1 {
+    font-size: 30px;
+}
+
+/* top bar start */
+.top-bar-wraper {
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    display: flex;
+}
+
+.left-div {
+    width: 40%;
+    height: 100%;
+    background: orange;
+}
+
+.right-div {
+    width: 60%;
+    height: 100%;
+    background: #000000;
+    border-left: 30px solid orange;
+    border-bottom: 50px solid transparent;
+}
+
+.address-content {
+    display: flex;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.time-content {
+    display: flex;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* top bar end */
+
+
+img,
+svg {
+    vertical-align: unset;
+}
+
+/* Container for the address section */
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    /* Adjust background color as needed */
+
+}
+
+/* Address */
+.address {
+    flex: 1;
+    /* Take up remaining space */
+    background-color: #f2f2f2;
+    /* Adjust color as needed */
+    padding: 20px;
+    /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    /* Adjust margin to create gap */
+    background-color: orange;
+}
+
+/* Time */
+.time {
+    flex: 1;
+    /* Take up remaining space */
+    text-align: right;
+    /* Align time to the right */
+    background-color: #e6e6e6;
+    /* Adjust color as needed */
+    padding: 20px;
+    /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    /* Prevent line break */
+    background-color: black;
+    color: white;
+}
+
+/* Icon */
+.icon {
+    margin-right: 5px;
+    /* Adjust margin as needed */
+    padding: 0 5px;
+    /* Add padding to the icon */
+}
+
+.header {
+    background-color: #f8f9fa;
+    /* Adjust as needed */
+    padding: 0px;
+    /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+
+}
+
+.header .logo {
+    margin-right: 20px;
+    /* Adjust margin between logo and contact info */
+    width: 120px;
+    padding: 5px;
+
+
+}
+
+.header .logo img {
+    width: 100%;
+    /* Adjust logo height as needed */
+
+
+
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info>div {
+    margin-right: 20px;
+    /* Adjust margin between contact info items */
+}
+
+.contact-info>div:last-child {
+    margin-right: 0;
+}
+
+.phone p,
+.email p {
+    font-size: 15px;
+    color: #777777;
+    margin-top: 5px;
+    margin-bottom: 0;
+    /* Remove default bottom margin */
+    font-weight: bold;
+    /* Make phone and email text bold */
+}
+
+.divider {
+    border-left: 1px solid #ccc;
+    height: 20px;
+    margin: 0 20px;
+    /* Adjust margin between divider and contact info */
+}
+
+.social-media {
+    display: flex;
+    padding: 12px;
+}
+
+.social-media a {
+    color: #333;
+    /* Adjust social media icon color */
+    text-decoration: none;
+    margin-left: 20px;
+    /* Adjust margin between social media icons */
+    font-size: 20px;
+    /* Increase font size of social media icons */
+    border-radius: 50%;
+    /* Apply border-radius to social media icons */
+    background-color: rgba(128, 128, 128, 0.43);
+    padding: 10px 15px;
+}
+
+.social-media a:first-child {
+    margin-left: 0;
+    /* Remove margin from first social media icon */
+}
+
+.social-media a:hover {
+    background-color: gray;
+    /* Adjust social media icon hover color */
+    font-weight: bold;
+    /* Make social media icon bold on hover */
+}
+
+
+.op-navbar {
+    /* padding: 5px; */
+    padding-top: 5px;
+    background-color: #99C24D;
+}
+
+.toggle-bar {
+    display: none;
+    /* Hide by default */
+}
+
+.op-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.op-navbar li {
+    position: relative;
+}
+
+.op-navbar li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: ease-in 0.3s;
+}
+
+.op-navbar li a:hover {
+    color: blue;
+}
+
+.separator {
+    position: relative;
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: -230px;
+    background-color: white;
+    z-index: 1;
+    ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* banner style */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    /* Adjust the height as needed */
+    flex-shrink: 0;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
+
+.slide-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    display: none;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    /* Ensure buttons appear above images */
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+/* about section style*/
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 10px;
+    padding: 15px;
+    background-color:#E0F7FA;
+
+
+}
+
+.doctor-image img {
+    width: 300px;
+    /* Adjust size as needed */
+    height: 300px;
+    position: relative;
+    bottom: 98px;
+    border-radius: 10px;
+}
+
+.doctor-info {
+    margin-left: 20px;
+    /* Adjust spacing between image and text */
+    padding: 12px 10px;
+    max-width: 700px;
+}
+
+.doctor-info p {
+
+    font-size: 1.2rem;
+   text-align: justify;
+    margin: 15px;
+
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    /* Blue color, you can change this */
+    color: #fff;
+    /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top:19px;
+    margin-left: 10px;
+}
+
+/* .read-more-btn:hover {
+    background-color: orange;
+    opacity: 1;
+    
+} */
+
+/* 
+paient banner */
+
+.section-happy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: dimgray;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+}
+
+.op-item {
+    text-align: center;
+}
+
+.op-item img {
+    width: 60px;
+    /* Adjust size of image */
+    position: relative;
+    top: 15px;
+    right: 10px;
+    /* padding: 5px 0px; */
+}
+
+.op-item p {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.op-item strong {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    font-family: fantasy;
+}
+
+/* //gallery section */
+
+
+.gallery {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    max-width: 900px;
+    /* Set maximum width */
+    max-height: 1000px;
+    margin: 50px auto;
+    /* Center the gallery horizontally */
+    /* background-color: aqua; */
+    padding: 15px 0px;
+
+}
+
+.gallery-title {
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    margin-bottom: 25px;
+    /* Add spacing between title and gallery */
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+}
+
+.gallery-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    overflow-y: hidden;
+}
+
+.gallery-card img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+
+.prev-btn {
+    left: 5px;
+
+
+
+}
+
+.next-btn {
+    right: 5px;
+
+}
+
+/* <!-- operating rooms text start css --> */
+
+
+
+.outer-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    /* Set width to 50% of the parent container */
+    padding: 10px;
+    margin: auto;
+}
+
+.inner-div h5,
+h6 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 5px;
+}
+
+.container-1 .box1 {
+    width: 400px;
+    height: 300px;
+    background-color: ghostwhite;
+    border: 1px dotted gray;
+}
+
+.box1 .places-time {
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.places,
+.time1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    /* Adjust font size as needed */
+    text-align: center;
+    /* Keep the text centered */
+}
+
+.option {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.option a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    /* Add padding to the anchor tags */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.option a:hover {
+    color: blue;
+}
+
+.option span {
+    display: inline-block;
+    vertical-align: middle;
+    /* Align span vertically */
+}
+
+.map-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Center text horizontally */
+
+}
+
+.map-tag a {
+    text-decoration: none;
+    color: orange;
+    padding: 0px;
+    font-size: 3rem;
+}
+
+.map-tag a:hover {
+    color: blue;
+}
+
+
+/* FAQ section  */
+.accordion-container {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.accordion-button {
+    background-color: rgb(255, 123, 0) !important;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+}
+
+.accordion-heading {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    ;
+}
+
+/* //footer */
+
+footer {
+    background-color: tomato;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* padding: 15px; */
+}
+
+.about-section-f {
+    width: 30%;
+    padding: 10px 5px;
+    /* background-color: blueviolet; */
+}
+
+.about-section-f .head {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.about-section-f p {
+    padding: 12px;
+    line-height: 25px;
+    margin-top: 5px;
+    color: white;
+}
+
+.social-media-section {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    /* background-color: rgb(128, 255, 0); */
+    width: 50%;
+
+}
+
+.social-icons i {
+    margin: 5px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: aqua;
+}
+
+.social-icons {
+    width: 100%;
+
+
+}
+
+.our-services-section {
+    width: 40%;
+}
+
+.our-services-section ul li {
+    text-align: center;
+    list-style: none;
+
+}
+
+.our-services-section ul {
+    margin: 10px;
+    padding: 5px;
+    /* background-color: aqua; */
+    width: 200px;
+}
+
+.our-services-section li {
+    padding: 5px;
+    margin: 10px;
+}
+
+.our-services-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.our-services-section .head {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.location-map-section {
+    width: 30%;
+    padding: 10px;
+    object-fit: contain;
+    position: relative;
+    bottom: 25px;
+
+}
+
+.location-map-section .head {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    position: relative;
+    left: 50px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-top: 1px solid #ccc;
+    color: white;
+}
+
+
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    /* min-width: 320px; */
+    max-width: 400px;
+    max-height: 400px;
+    /* width: 380px; */
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    height: 360px;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+figure.effect-oscar {
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+}
+
+figure.effect-oscar img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+    padding: 3em;
+    background-color: rgba(58, 52, 42, 0.7);
+    -webkit-transition: background-color 0.35s;
+    transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid #fff;
+    content: '';
+}
+
+figure.effect-oscar h2 {
+    margin: 20% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+figure.effect-oscar:hover img {
+    opacity: 0.4;
+}
+
+
+/* test */
+
+.vl {
+    border-left: 2px solid rgb(94, 93, 93);
+    height: 350px;
+    margin: 0px 20px;
+}
+
+.abhi-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.abhi-part {
+    width: 45%;
+    padding: 20px;
+}
+
+.custom-list {
+    list-style-type: disc;
+    /* Default bullet points */
+    padding-left: 20px;
+    /* Space for bullet points */
+}
+
+.custom-list li {
+    margin-bottom: 5px;
+    /* Space between list items */
+}
+
+
+
+ .sidebar {
+    display: none;
+    width: 80%;
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000;
+}
+
+
+ .sidebar-header {
+    width: 100%;
+    padding: 5px;
+    background-color: orange;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close-icon {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    margin-right: 12px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.submenu,
+.sub-submenu {
+    display: none;
+    background-color: #f9f9f9;
+}
+
+.submenu .nav-link,
+.sub-submenu .nav-link {
+    padding-left: 30px;
+}
+
+.dropdown.active+.submenu,
+.dropdown.active+.sub-submenu {
+    display: block;
+}
+
+.nav-services-submenu {
+    border-left: 4px solid #8e24aa;
+}
+
+.nav-orthopedic-submenu {
+    border-left: 4px solid #ab47bc;
+}
+
+.nav-physical-submenu {
+    border-left: 4px solid #ce93d8;
+}
+
+.nav-video-submenu {
+    border-left: 4px solid #00acc1;
+}
+
+
+.sidebar ul li ul li {
+    border-bottom: none;
+} 
+
+/* home end */
+
+/* About page start */
+
+
+.main-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.doctor-info2 {
+     width: 700px;
+}
+.bold{
+    color: orange;
+}
+
+.doctor-info2 h1 {
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.doctor-info2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.doctor-image2 {
+     width: 300px;
+     height: 330px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+     bottom: 70px;
+}
+
+.doctor-image2 img {
+    width: 100%;
+    display: block;
+}
+
+.doctor-details2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.doctor-details2 p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.doctor-details2 span {
+    font-size: 16px;
+}
+
+.about-social-icons {
+position: absolute;
+top: 10px; /* Adjust as needed */
+right: 10px; /* Adjust as needed */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+padding: 5px;
+transition: opacity 0.3s ease;
+z-index: 3;
+opacity: 0;
+}
+
+.about-social-icons a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+margin: 5px;
+color: #333;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.about-social-icons a:hover {
+background-color: rgba(255, 255, 255, 0.412);
+}
+
+.doctor-image2:hover .about-social-icons {
+opacity: 1;
+}
+
+.share-icon {
+position: absolute;
+bottom: 100px; /* Adjust as needed */
+right: 20px; /* Adjust as needed */
+background-color: whitesmoke;
+border-radius: 50%;
+padding: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-size: 1.4rem;
+}
+
+/* //next section style */
+
+.about-section {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 15px;
+overflow: hidden; /* To prevent image overflow */
+}
+.doctor-container{
+max-width: 1200px;
+margin: auto;
+}
+
+.text-section {
+flex: 1;
+margin-right: 20px;
+}
+
+.text-section p {
+font-size: 1.2rem;
+
+line-height: 1.6;
+}
+
+.image-section img {
+width: 700px;
+height: auto;
+position: relative;
+bottom: 30px;
+}
+
+/* center-text style */
+.center-text{
+padding: 20px;
+
+}
+.text-content{
+max-width: 1100px;
+padding: 20px;
+margin: 10px auto;
+}
+.text-content p{
+font-size: 1.2rem;
+line-height: 1.6;
+}
+
+
+/* //career-highlights style  */
+
+.career-container {
+    padding: 20px;
+}
+.mid-conatiner{
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.career-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.highlight-item .icon {
+    color: orange;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.highlight-item p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.highlight-item p .bold {
+    font-weight: bold;
+}
+
+/* ACHIEVEMENTS & CONTRIBUTIONS style  css*/
+.container-ACHIEVEMENTS {
+max-width: 1150px;
+margin:auto;
+padding: 0 20px;
+}
+
+  .container-ACHIEVEMENTS h1 {
+text-align: left;
+font-size: 25px;
+margin-bottom: 30px;
+}
+
+.faq {
+margin-bottom: 15px;
+border-bottom: 1px solid #ccc;
+padding-bottom: 10px;
+}
+
+.faq h2 {
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 20px;
+margin: 0;
+padding: 10px 0;
+}
+
+.faq h2 i {
+transition: transform 0.3s;
+}
+
+.faq ul {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.5s ease;
+list-style-type: disc;
+padding-left: 20px;
+margin: 10px 0 0 0;
+}
+
+.faq.active ul {
+max-height: 1000px; /* Adjust this value based on the expected maximum height of the content */
+}
+
+.faq ul li {
+margin-bottom: 10px;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.faq ul h3 {
+margin-top: 20px;
+font-size: 18px;
+font-weight: bold;
+}
+
+.faq ul li::marker {
+color: black; /* Change bullet point color if needed */
+}
+
+.faq ul li h3 {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+
+/* media query of about doctor   */
+
+@media (max-width: 768px) {
+.section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor-image2 {
+    margin-bottom: 20px;
+    bottom: 0;
+}
+.section .doctor-info2{
+    padding: 12px;
+   
+}
+
+.doctor-info2 {
+    width: 100%;
+    text-align: left;
+}
+
+.doctor-info2 h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.doctor-info2 p {
+    font-size: 1.4rem;
+}
+
+.doctor-details2 p {
+    font-size: 1.2rem;
+}
+/* //about-section media query */
+.about-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-section {
+    margin-right: 0;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.4rem; /* Font size for mobile devices */
+}
+
+.image-section img{
+width: 100%;
+position: relative;
+ top: 0px;
+}
+
+/* center-text media query style*/
+.center-text{
+text-align: left;
+}
+.text-content p {
+    font-size: 1.4rem; /* Font size for mobile devices */
+    text-align: left;
+    justify-items: center;
+    line-height: 1.6;
+}
+.text-content{
+ width: 100%;
+ position: relative;
+ bottom: 25px;
+         }
+
+
+/* carrer highlight style */
+.career-title {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .highlight-item p {
+        font-size: 1.1rem;
+    }
+
+    .highlight-item .icon {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* static banner style */
+.banner {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    background-image: linear-gradient(to bottom, #35478C, #4E7AC7);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.centered {
+    text-align: center;
+    padding: 10px;
+}
+
+ .text-banner {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.bold-text{
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+}
+
+.link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* span {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1px;
+} */
+
+/* <!-- operating rooms text start css --> */
+
+
+
+.outer-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    /* Set width to 50% of the parent container */
+    padding: 10px;
+    margin: auto;
+}
+
+  h1 {
+    font-size: 2rem;
+  }
+
+
+  
+  .inner-div h5,h6 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 5px;
+}
+
+.container-1 .box1 {
+    width: 400px;
+    height: 300px;
+    background-color: ghostwhite;
+    border: 1px dotted gray;
+}
+
+.box1 .places-time {
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.places,
+.time1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    /* Adjust font size as needed */
+    text-align: center;
+    /* Keep the text centered */
+}
+
+
+.option {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.option a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    /* Add padding to the anchor tags */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.option a:hover {
+    color: blue;
+}
+
+.option span {
+    display: inline-block;
+    vertical-align: middle;
+    /* Align span vertically */
+}
+
+.map-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Center text horizontally */
+
+}
+
+.map-tag a {
+    text-decoration: none;
+    color: orange;
+    padding: 0px;
+    font-size: 3rem;
+}
+
+.map-tag a:hover {
+    color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+    .outer-div {
+        width: 100%;
+    }
+
+    .inner-div {
+        max-width: 100%;
+    }
+
+    .inner-div h1 {
+        font-size: 30px;
+        padding: 15px;
+        text-align: left;
+    }
+    .container-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+    .container-1 .box1 {
+        width: 100%;
+    }
+
+    .map-tag {
+        position: relative;
+        /* Reset position to relative */
+        bottom: 25px;
+    }
+
+}
+
+
+/* About page end */
+
+
+/* ********** Contact page css start */
+
+.container-form {
+    width: 100%;
+    /* max-width: 1200px; */
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.main-heading {
+    text-align: left;
+    font-size: 19px;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+}
+
+.description-box .description {
+    text-align: justify;
+    font-size: 16px;
+    /* margin-bottom: 5px; */
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.description-box {
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-left: 5px solid red;
+    /* width: 100%; */
+}
+
+.content {
+ display: flex;
+ justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-form{
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-form-info{
+    width: 350px;
+    height: 550px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* .contact-form-info {
+    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+} */
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.form-header {
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+padding: 12px 10px;
+    
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.contact-form input,.contact-form textarea {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.captcha img {
+    margin-right: 10px;
+}
+
+/* .contact-info {
+    background-color: #f1f1f1;
+} */
+
+.contact-form-info .info-header {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.info-header{
+    margin-top: 0px;
+    background-color: orange;
+    padding: 20px;
+    width: 100%;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    /* background-color: blue; */
+    /* margin: 7px; */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 2px 9px;
+}
+
+.info-item .icon {
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-bottom: 12px;
+    background-color: rgba(120, 118, 118, 0.534);
+    border-radius: 50%;
+    padding: 15px 20px;
+    
+
+}
+
+.info-item h3 {
+    margin:10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.info-item .details p {
+font-size: 1rem;
+padding: 10px 12px;
+position: relative;
+bottom: 15px;
+color: black;
+
+}
+.info-item .media-icon {
+    padding: 10px 10px;  
+    margin: auto;
+}
+.info-item .media-icon a{
+    padding: 10px 10px;
+    text-decoration: none;
+    
+
+}
+.info-item .media-icon a i{
+    font-size: 22px;
+    color: rgba(0, 0, 255, 0.622);
+    background-color: #ccc;
+    padding: 12px 15px;
+    border-radius: 50%;
+    transition: ease-in 0.3s;
+}
+.info-item .media-icon a i:hover{
+    background-color: rgba(128, 128, 128, 0.521);
+}
+
+.required {
+    color: red;
+}
+
+/* ********** Contact page css end */
+
+
+
+/* testimonils slider start css */
+
+.testimonial-section {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background-color: rgba(222, 184, 135, 0.219);
+    overflow: hidden;
+    padding: 30px 0; /* Add padding to the top and bottom */
+}
+
+.testimonial-heading {
+    margin-bottom: 20px; /* Adjust space below the heading */
+}
+
+.stars {
+    margin-bottom: 10px; /* Adjust space above and below the stars */
+    font-size: 2rem;
+    color: orange;
+}
+
+.testimonial-slider-container {
+   
+    margin-top: 20px; /* Adjusted margin */
+    position: relative;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    margin: 0 auto; /* Center align */
+    width: calc(300px * 3 + 20px * 2); /* 3 cards with margin */
+    padding: 0 15px; /* Adjusted padding */
+    position: relative;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 0 5px; /* Adjusted margin */
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.user-image {
+    width: 120px; /* Adjust image width */
+    height: 120px; /* Adjust image height */
+    border-radius: 50%; /* Make image rounded */
+    margin: 0 auto 10px; /* Center image and add space below */
+}
+
+.name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review {
+    margin-top: auto; /* Align review to the middle */
+    text-align: center; /* Center-align review text */
+    line-height: 1.6;
+}
+
+.google-logo {
+    width: 120px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-top: 5px 5px; /* Adjust margin */
+}
+
+
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    width: 100%; /* Added */
+    justify-content: space-between; /* Added */
+    padding: 0 10px; /* Added */
+}
+
+.testimonial-prev, .testimonial-next {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: all;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 50%;
+}
+.testimonial-prev {
+    left: 25px;
+}
+
+.testimonial-next {
+   right: 25px;
+
+}
+
+
+/* testimonils slider start end */
+
+
+/**************************************** gallery css start ****************************** */
+
+
+.photos-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+
+.centered-content {
+    max-width: 1200px;
+    height: auto; /* Adjust the width as needed */
+    text-align: center;
+    padding: 20px 10px;
+
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.photo-card {
+    width: 270px; /* Adjust according to your design */
+    margin: 10px; /* Adjust spacing between cards */
+    text-align: center;
+    border-radius: 3px;
+}
+
+.photo-card img {
+    width: 100%; /* Make the image fill the entire card */
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.photo-card p {
+    font-size: 1rem;
+    /* background-color: aqua; */
+    margin-top: 15px;
+}
+
+
+/**************************************** gallery css end ****************************** */
+
+
+
+/* ********************************************** book appointent css start ******************  */
+
+
+.form-wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+ .form-wrapper h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* height: 500px; */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    max-height: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-icon {
+    font-size: 50px;
+    color: #4CAF50;
+}
+
+.modal-content h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* *********************************************** book appointent css end *************************** */
+
+
+/* whatsapp sticker css start */
+
+.whatsapp-icon {
+    width: 60px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    position: fixed;
+    bottom: 5px;
+    left: 20px;
+    z-index: 9999;
+    animation: wave 2s infinite;
+  }
+  
+  .whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /* whatsapp sticker css start  end*/
+
+
+
+  /* call icon sticker css start */
+
+  .call-icon {
+    position: fixed;
+    bottom: 5px;
+    right: 20px; /* Change from left to right */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    z-index: 1000;
+    animation: wave 2s infinite;
+  }
+  
+  .call-icon img {
+    width: 100%;
+    height: 100%;
+     color: green;  
+  }
+
+  
+  @keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+
+  /* call icon sticker css end */
+
+  

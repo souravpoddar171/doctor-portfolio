@@ -1,0 +1,596 @@
+/*
+ * Resposive css for mobile and tab
+ */
+
+ /* header and navbar media query */
+@media screen and (max-width: 768px) {
+    .header{
+        width: 100%;
+        flex-direction: column;
+    
+    }
+    .header .logo{
+        width: 120px;
+        position: relative;
+        left: 10px;
+    }
+    .contact-info{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0px;
+    text-align: center;
+    }
+    
+    .top-navbar{
+        display: none;
+    }
+    .divider{
+        display: none;
+    }
+    .email{
+        display: none;
+    
+    }
+    .phone{
+        display: none;
+    }
+    .social-media {
+        text-align: center;
+        padding: 12px;
+        /* position: relative;
+        right: 10px;
+        top: 5px; */
+    
+        
+    }
+    .social-media a{
+        font-size: 15px;
+        padding: 10px 15px;
+    
+    }
+    .op-navbar{
+        width: 100%;
+        font-size: 18px;
+    }
+    .op-navbar ul{
+        display: none;
+    }
+    .toggle-bar{
+        display: block;
+        cursor: pointer;
+        /* background-color: red; */
+        width: 40px;
+        height: 40px;
+        padding: 7px 10px;
+        transition: ease-in 0.5s;
+        
+    }
+    .toggle-bar:hover{
+        color: white;
+    }
+    
+    }
+
+ 
+    /* banner media query */
+@media only screen and (max-width: 600px) {
+    .slide {
+        height: 200px; /* Reduce height for mobile devices */
+
+    }
+
+    .slide-text {
+        font-size: 14px; /* Reduce font size for mobile devices */
+        padding: 5px; /* Reduce padding for mobile devices */
+    }
+
+    .prev,
+    .next {
+        font-size: 18px; /* Reduce button size for mobile devices */
+        padding: 8px; /* Reduce button padding for mobile devices */
+    }
+}
+/* about section media query */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+    
+    .doctor-info {
+        margin-left: 0; /* Reset margin for better centering */
+        margin-top: 20px; /* Add margin to separate from image */
+    }
+    
+    .doctor-image img {
+        width: 300px;
+        height: 300px; /* Adjust image size for smaller screens */
+        /* margin-bottom: 0px; */
+        position: relative;
+        top: 20px;
+    }
+     .doctor-info p{
+    font-size: 1.2rem;
+    justify-items: center;
+    text-align: justify;
+    
+    }
+    }
+/* //gallery media query */
+@media screen and (max-width: 768px) {
+    .gallery {
+        max-width: 100%; /* Adjust maximum width for smaller screens */
+    }
+
+    .gallery-container {
+        flex-wrap: nowrap; /* Ensure images don't wrap on smaller screens */
+    }
+
+    .gallery-card {
+        flex: 0 0 auto;
+        width: 100%; /* Ensure images take full width on smaller screens */
+    }
+}
+
+
+
+/* media query of paitent banner */
+
+@media (max-width: 768px) {
+    .section-happy {
+        flex-direction: column;
+        max-height: 500px; /* Remove maximum height */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .op-item {
+        width: 100%; /* Make items full width on smaller screens */
+        /* margin-bottom: 20px;  */
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .outer-div {
+        width: 100%;
+    }
+
+    .inner-div {
+        max-width: 100%;
+    }
+
+    .inner-div h1 {
+        font-size: 25px;
+        padding: 15px;
+        text-align: left;
+    }
+    .container-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+    .container-1 .box1 {
+        width: 100%;
+    }
+
+    .map-tag {
+        position: relative;
+        /* Reset position to relative */
+        bottom: 25px;
+    }
+  /* faq section  */
+    .accordion-container{
+        max-width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        padding:10px 0px;
+        
+    }
+
+    .about-section-f,
+    .our-services-section,
+    .location-map-section,
+    .social-media-section {
+        width: 100%;
+        margin: 0px;
+        /* padding: 10px; */
+    }
+
+    .our-services-section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        position: relative;
+        right: 60px;
+        width: 100%;
+    }
+
+    .our-services-section ul li {
+        width: 100%;
+        padding: 10px;
+        margin: 2px 0;
+        
+    }
+    .our-services-section .head{
+      text-align: left;
+    }
+    .our-services-section ul li a{
+        font-size: 1.0rem;
+    }
+     iframe {
+       width: 100%;
+        
+        
+    }
+
+
+}
+
+/* faq */
+
+@media (max-width:576px){
+    .col-md-4{
+        flex:0 0 auto;
+        width: 100%;
+    }
+}
+
+ /* media query of about doctor  start */
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .doctor-image2 {
+        margin-bottom: 20px;
+        bottom: 0;
+    }
+    .section .doctor-info2{
+        padding: 12px;
+       
+    }
+    
+    .doctor-info2 {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .doctor-info2 h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .doctor-info2 p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    
+    .doctor-details2 p {
+        font-size: 1.2rem;
+    }
+    /* //about-section media query */
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text-section {
+        margin-right: 0;
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .text-section p {
+        font-size: 1.2rem; /* Font size for mobile devices */
+        text-align: justify;
+    }
+    
+    .image-section img{
+    width: 100%;
+    position: relative;
+     top: 0px;
+    }
+    
+    /* center-text media query style*/
+    .center-text{
+    text-align: left;
+    }
+    .text-content p {
+        font-size: 1.2rem; /* Font size for mobile devices */
+        text-align: justify;
+        justify-items: center;
+        line-height: 1.6;
+    }
+    .text-content{
+     width: 100%;
+     position: relative;
+     bottom: 25px;
+             }
+    
+    
+    /* carrer highlight style */
+    .career-title {
+            font-size: 1.5rem;
+            text-align: left;
+        }
+    
+        .highlight-item p {
+            font-size: 1.1rem;
+        }
+    
+        .highlight-item .icon {
+            font-size: 1.2rem;
+        }
+    }
+
+     /* media query of about doctor  start */
+    
+
+
+/* ********** Contact page css start */
+
+  
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-form-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-header {
+        font-size: 24px;
+    }
+    .description-box{
+        width: 100%;
+    }
+    .description{
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1.6;
+    }
+    .main-heading{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .info-item .icon{
+        font-size: 20px;
+    }
+
+    .info-header {
+        font-size: 24px;
+    }
+    .info-item .details h3 {
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+     .info-item .details p {
+       font-size: 15px;
+       padding: 10px 5px;
+
+    
+
+    }
+
+    .info-item .media-icon a i {
+            font-size: 18px;
+            padding: 10px 12px;
+        }
+
+        .info-item .media-icon  {
+            gap: 2px;
+            margin: auto;
+            padding: 5px;
+        }
+}
+
+/* ********** Contact page css end */
+
+
+
+
+
+
+/* testimonilas media query start */
+
+@media screen and (max-width: 768px) {
+    .testimonial-slider {
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      scroll-snap-type: x mandatory; /* Ensure each card snaps into place */
+        margin: 20px auto;
+        width: 100vw;
+    }
+  
+    .card {
+      width: 100vw; /* Adjust as needed */
+      scroll-snap-align: start; /* Align each card to the start of the scroll container */
+    }
+  }
+/* testimonilas media query end*/
+
+
+/* ************************************** gallery css start ***************************** */
+
+@media screen and (max-width: 768px) {
+    .photo-card {
+        width: 100%; /* Make the cards take up full width on smaller screens */
+        margin: 1vw 0; /* Adjust the vertical margin relative to viewport width */
+    }
+
+    .centered-content {
+        padding: 20px 0; /* Adjust the padding */
+        margin-bottom: 30px;
+    
+    }
+
+    .photo-card p {
+        font-size: 1rem; /* Decrease the font size for smaller screens */
+        margin-top: 30px;
+    }
+}
+
+
+/* ************************************** gallery css start ***************************** */
+
+/* ************************************** Book appointent  css start ***************************** */
+
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+
+    .form-field input, 
+    .form-field textarea {
+        font-size: 14px;
+    }
+    
+    .button, .popup-content .button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* ************************************** Book appointent  css end ***************************** */
+
+
+@media only screen and (max-width: 768px){
+    .responsiveness{
+        flex-direction: column;
+
+    }
+    .fb-col{
+        margin-top: 6rem;
+    }
+    .fb-card{
+        max-height: 218px !important;
+    }
+}
+
+
+
+/* media query of static banner */
+@media screen and (max-width: 768px) {
+
+    .banner{
+      width: 100%;
+      height: 218px;
+    }
+
+    .text-banner{
+    font-size: 2.5rem;
+    font-weight: bold;
+     /* margin-bottom: 20px; */
+     font-weight: 600;
+    
+    
+}
+
+    .bold-text{
+        font-size: 1rem;
+        margin-bottom: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        display: contents;
+        
+    }
+
+    /* .bold-text {
+        font-size: 20px;
+        padding: 10px;
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        align-items: center;
+        display: contents;
+      } */
+}
+
+/* static banner end */
+
+/* ************************************* Nav bar in mobie destep views    *******************/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .op-navbar li a {
+    padding: 2px;
+    font-size: 12px;
+    }
+    .time-content{
+        font-size: 12px;
+        padding: 20px 0px;
+    }
+    .address-content{
+        font-size: 11px;
+        padding: 20px 5px;
+    }
+    .our-services-section ul{
+        margin: 2px;
+        width: 160px;
+    }
+    .social-media-section{
+        width: 75%;
+    }
+    .places, .time1 {
+        font-size: 13px;
+    }
+    /* about page */
+    .doctor-image2{
+        width: 30%;
+    }
+    .doctor-info2{
+        width: 60%;
+    }
+    .contact-form-info{
+        height: 565px;
+    }
+    .info-item{
+        padding: 1px 9px;
+    }
+    
+}
+@media screen and (min-width: 1024px) and (max-width: 1221px) {
+    .op-navbar li a {
+    padding: 12px;
+    font-size: 14px;
+    }
+    .time-content{
+        font-size: 12px;
+    }
+    .address-content{
+        font-size: 12px;
+    }
+    .places, .time1 {
+        font-size: 16px;
+    }
+    .contact-form-info{
+        height: 565px;
+    }
+    .info-item{
+        padding: 1px 9px;
+    }
+}
